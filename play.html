@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>2D - Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body" onload="playerHide();" onkeyup="keyCheck(event);">
+
+    <div class="background" id="background">
+
+        <div class="beginBoardWrap" id="beginBoardWrap">
+            <div class="beginBoard" id="beginBoard">
+                <img src="img/scoreBoard.png" class="beginBoardImg">
+                <img src="flame.gif" class="beginFlame">
+                <p class="beginNote">Press 'Enter' to start the Game <br /> Press 'Space' to jump</p>
+            </div>
+        </div>
+
+        <div class="playerBoardWrap" id="playerBoardWrap">
+            <div class="beginBoard" id="beginBoard">
+                <img src="img/scoreBoard.png" class="beginBoardImg">
+
+                    <img class="player p1" src="img/character/Idle (1).png">
+                    <button class="playButton b1" onclick="playerSelect1();">Select</button>
+
+                    <img class="player p2" src="img/adventureGirl/Idle (1).png">
+                    <button class="playButton b2" onclick="playerSelect2();">Select</button>
+
+            </div>
+        </div>
+
+        <div class="score">
+            <img class="scoreValBg" src="img/scoreVal.png">
+            <img class="coin" src="img/coin.png">
+            <p class="scoreText" id="scoreText">0</p>
+        </div>
+        <img src="img/character/Idle (1).png" class="player" id="player">
+        
+    </div>
+    <div class="scoreWrap" id="scoreWrap">
+        <div class="gameOver" id="gameOver">
+            <img src="img/scoreBoard.png" alt="">
+            <h2 class="text">Game Over</h2>
+            <p  class="scoreValue" id="scoreTextValue">Your Score: </p>
+            <div class="overButtonWrap">
+                <button class="playButton" onclick="restart();">Play Again</button>
+                <button class="playButton" onclick="homePage();" style="margin-left: 10px;">Home</button>
+            </div>
+            
+           
+        </div>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
